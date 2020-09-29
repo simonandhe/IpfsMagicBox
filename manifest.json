@@ -1,0 +1,160 @@
+{
+    "name" : "COW魔盒",
+    "appid" : "__UNI__4E053C6",
+    "description" : "",
+    "versionName" : "2.2.3",
+    "versionCode" : 223,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 5000
+        },
+        /* 模块配置 */
+        "modules" : {
+            "VideoPlayer" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.INSTALL_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.REQUEST_INSTALL_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_PROFILE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SOCIAL_STREAM\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "idfa" : false
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "ad" : {}
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "resource/splash.png",
+                    "xhdpi" : "resource/splash.png",
+                    "xxhdpi" : "resource/splash.png"
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "resource/icons/72x72.png",
+                    "xhdpi" : "resource/icons/96x96.png",
+                    "xxhdpi" : "resource/icons/144x144.png",
+                    "xxxhdpi" : "resource/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "resource/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "resource/icons/76x76.png",
+                        "app@2x" : "resource/icons/152x152.png",
+                        "notification" : "resource/icons/20x20.png",
+                        "notification@2x" : "resource/icons/40x40.png",
+                        "proapp@2x" : "resource/icons/167x167.png",
+                        "settings" : "resource/icons/29x29.png",
+                        "settings@2x" : "resource/icons/58x58.png",
+                        "spotlight" : "resource/icons/40x40.png",
+                        "spotlight@2x" : "resource/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "resource/icons/120x120.png",
+                        "app@3x" : "resource/icons/180x180.png",
+                        "notification@2x" : "resource/icons/40x40.png",
+                        "notification@3x" : "resource/icons/60x60.png",
+                        "settings@2x" : "resource/icons/58x58.png",
+                        "settings@3x" : "resource/icons/87x87.png",
+                        "spotlight@2x" : "resource/icons/80x80.png",
+                        "spotlight@3x" : "resource/icons/120x120.png"
+                    }
+                }
+            }
+        },
+        "compilerVersion" : 3,
+        "error" : {
+            "url" : "hybrid/html/error.html"
+        },
+        "nativePlugins" : {
+            "lyzml-DLNA" : {
+                "__plugin_info__" : {
+                    "name" : "DLNA投屏，支持IOS和安卓",
+                    "description" : "DLNA投屏，支持IOS和安卓，不使用IDFA，不支持镜像投屏，不支持音量和进度控制",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=1554",
+                    "android_package_name" : "uni.UNI4E053C6",
+                    "ios_bundle_id" : "",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "1554",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "h5" : {
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "devServer" : {
+            "port" : 8000,
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/dpc" : {
+                    "target" : "http://dpc.dapeis.net",
+                    "changeOrigin" : true,
+                    "secure" : false
+                }
+            }
+        }
+    }
+}

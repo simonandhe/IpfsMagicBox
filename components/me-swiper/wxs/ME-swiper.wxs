@@ -1,0 +1,48 @@
+var startX = 0;
+var diffX = 0;
+var itemWidth = 0;
+var init = function(options) {
+	itemWidth = options.itemWidth
+}
+var touchstart = function(e, ins) {
+	var refreshContianer = ins.selectComponent('#refresh-container');
+	refreshContianer.setStyle({
+		'transition': 'none'
+	})
+	startX = e.touches[0].pageX - diffX;
+}
+var touchmove = function(e, ins) {
+	var refreshContianer = ins.selectComponent('#refresh-container');
+	var itemWidth = refreshContianer.$el.offsetWidth
+	var moveX = e.touches[0].pageX;
+	var diffXTemp = (moveX - startX);
+	diffX = diffXTemp;
+	refreshContianer.setStyle({
+		'transform': 'translateX(' + (diffXTemp) + 'px)'
+	})
+}
+var touchend = function(e, ins) {
+	var refreshContianer = ins.selectComponent('#refresh-container');
+	refreshContianer.setStyle({
+		'transition': 'all .3s ease-in-out'
+	})
+	var d = direction(diffX);
+	diffX = 0;
+	refreshContianer.setStyle({
+		'transform': 'translateX(' + (0) + 'px)'
+	})
+}
+var direction = function(diffX) {
+	var d = 'right';
+	if (diffX > 0) {
+		d = 'left';
+	}
+	return d;
+}
+
+module.exports = {
+	init,
+	touchmove,
+	touchstart,
+	touchend
+}

@@ -1,0 +1,12 @@
+export const SIGN_OUT = 'SIGN_OUT'
+export const SET_AUTH = 'SET_AUTH'
+export const SET_USERINFO = 'SET_USERINFO'
+export const INIT_USER = 'INIT_USER'
+export const UPDATE_PLAY_HISTORY = 'UPDATE_PLAY_HISTORY'
+export const UPDATE_USER_INFO = 'UPDATE_USER_INFO'
+export const SET_VIDEO_TABS = 'SET_VIDEO_TABS'
+export const SET_LIVE_TABS = 'SET_LIVE_TABS'
+export const SET_LIVE_TAGS = 'SET_LIVE_TAGS'
+export const SET_IS_CONNECT = 'SET_IS_CONNECT'
+export const SET_NETWORKTYPE = 'SET_NETWORKTYPE'
+
